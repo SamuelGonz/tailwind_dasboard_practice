@@ -4,7 +4,7 @@ const App = () => {
     return (
         <div className="grid grid-cols-6 min-h-screen">
             <Sidebar />
-            <div>p</div>
+            <main>Content</main>
         </div>
     );
 };
