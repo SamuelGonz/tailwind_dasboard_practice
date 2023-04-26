@@ -1,8 +1,12 @@
 import { RiHome3Line, RiFileCopyLine, RiWalletLine, RiPieChartLine } from "react-icons/ri";
 
-export const Sidebar = () => {
+export const Sidebar = ({ showMenu }) => {
     return (
-        <div className="bg-primary-dark h-full">
+        <div
+            className={`bg-primary-dark h-full fixed lg:static w-[80%] lg:w-full ${
+                showMenu ? "bottom-0" : "-bottom-full"
+            } left-0 transition-all`}
+        >
             {/* Profile */}
             <div className="flex flex-col items-center justify-center p-8 gap-2 h-[30vh]">
                 <img
