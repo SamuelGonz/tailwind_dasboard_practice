@@ -4,5 +4,5 @@
 
 
 .link {
-   @apply flex items-center gap-6 py-4 px-4 rounded-xl text-gray-300 hover:text-white transition-all relative before:w-2 before:h-2 before:bg-gray-300 before:rounded-full before:absolute before:right-2 before:top-[18px] before:hidden hover:before:block
+   @apply flex items-center gap-6 py-4 px-4 rounded-xl text-gray-300 hover:text-white transition-all relative before:w-2 before:h-2 before:bg-gray-300 before:rounded-full before:absolute before:right-4 before:top-1/2 before:-translate-y-1/2 before:hidden hover:before:block
 }

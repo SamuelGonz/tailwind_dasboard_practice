@@ -3,9 +3,9 @@ import { RiHome3Line, RiFileCopyLine, RiWalletLine, RiPieChartLine } from "react
 export const Sidebar = ({ showMenu }) => {
     return (
         <div
-            className={`bg-primary-dark h-full fixed lg:static w-[80%] lg:w-full ${
+            className={`bg-primary-dark h-full fixed lg:static w-[80%] md:w-[40%] lg:w-full lg:col-span-2 xl:col-span-1 ${
                 showMenu ? "bottom-0" : "-bottom-full"
-            } left-0 transition-all`}
+            } left-0 transition-all z-40`}
         >
             {/* Profile */}
             <div className="flex flex-col items-center justify-center p-8 gap-2 h-[30vh]">
