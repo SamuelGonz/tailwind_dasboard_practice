@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { RiMore2Fill, RiCloseLine } from "react-icons/ri";
 
-import { Header, Sidebar, CardsOverViewSection } from "./components";
+import { Header, Sidebar, CardsOverViewSection, MainInfo } from "./components";
 
 const App = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -11,9 +11,10 @@ const App = () => {
     return (
         <div className="grid lg:grid-cols-6 xl:grid-cols-6 min-h-screen">
             <Sidebar showMenu={showMenu} />
-            <main className="lg:col-span-4 xl:col-span-5 bg-gray-100 p-8">
+            <main className="lg:col-span-4 xl:col-span-5 bg-gray-100 px-8 py-4 h-screen overflow-y-auto">
                 <Header />
                 <CardsOverViewSection />
+                <MainInfo />
             </main>
             {/* Btn movil */}
             <button
